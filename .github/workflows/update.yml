@@ -1,0 +1,47 @@
+# อัปเดตประกาศการระบายน้ำอัตโนมัติทุก 3 ชั่วโมง
+# ขั้นตอน: ดึงข้อความจากหน้าที่ยืนยันแล้ว → Gemini สรุป → ตรวจ → commit data/announcements.json → Vercel deploy อัตโนมัติ
+# ตั้งค่า: Settings → Secrets and variables → Actions → New repository secret ชื่อ GEMINI_API_KEY
+# หมายเหตุ: GitHub อาจหน่วงเวลา cron ได้ และจะหยุด schedule ของ repo ที่ไม่มีกิจกรรม 60 วัน (กด Run workflow เพื่อเปิดใหม่)
+name: update-announcements
+
+on:
+  schedule:
+    - cron: "0 */3 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: update-announcements
+  cancel-in-progress: false
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+      - run: npm ci
+      - name: ทดสอบสคริปต์ (ไม่ใช้เน็ต)
+        run: npm run test:scripts
+      - name: ดึงประกาศ + AI สรุป
+        env:
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          GEMINI_MODEL: ${{ vars.GEMINI_MODEL }}
+        run: node scripts/update-announcements.mjs
+      - name: commit ถ้ามีการเปลี่ยนแปลง
+        run: |
+          if git diff --quiet -- data/announcements.json; then
+            echo "ไม่มีการเปลี่ยนแปลง"
+          else
+            git config user.name "namnont-watch-bot"
+            git config user.email "actions@users.noreply.github.com"
+            git add data/announcements.json
+            git commit -m "chore: update announcements"
+            git push
+          fi

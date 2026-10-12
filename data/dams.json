@@ -1,0 +1,11 @@
+{
+  "_note": "รายการเขื่อนที่แสดงในหน้า /dams จับคู่กับชื่อเขื่อนใน API กรมชลประทาน ด้วยคำที่อยู่ใน match (ตรวจคำที่ตรงกับชื่อจริงที่ API ส่งมา) — เฉพาะ confirmed:true เท่านั้นที่แสดง",
+  "flowUnit": null,
+  "flowUnitTodo": "TODO: ตรวจหน่วยของ inflow/outflow ในเอกสาร API กรมชลประทาน (app.rid.go.th/reservoir/api/document/dam) แล้วใส่ที่นี่ เช่น \"ล้าน ลบ.ม./วัน\" — ถ้ายังเป็น null หน้าเว็บจะบอกว่า 'ยังไม่ยืนยันหน่วย'",
+  "dams": [
+    { "id": "bhumibol", "label": "เขื่อนภูมิพล", "match": ["ภูมิพล"], "confirmed": true },
+    { "id": "sirikit", "label": "เขื่อนสิริกิติ์", "match": ["สิริกิติ์"], "confirmed": true },
+    { "id": "pasak", "label": "เขื่อนป่าสักชลสิทธิ์", "match": ["ป่าสัก"], "confirmed": true },
+    { "id": "khwaenoi", "label": "เขื่อนแควน้อยบำรุงแดน", "match": ["แควน้อย"], "confirmed": false, "proposal": "ข้อเสนอเพิ่ม: เขื่อนใหญ่อีกแห่งในลุ่มน้ำเจ้าพระยา — ยืนยันโดยเปลี่ยน confirmed เป็น true" }
+  ]
+}

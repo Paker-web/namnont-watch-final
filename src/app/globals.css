@@ -1,0 +1,182 @@
+@import "tailwindcss";
+
+/* =====================================================================
+   DESIGN TOKENS — น้ำนนท์ Watch
+   แก้สี/ระยะ/มุมโค้งได้ที่ไฟล์นี้ที่เดียว แล้วทั้งเว็บจะเปลี่ยนตาม
+   - โหมดสว่างอยู่ใน :root
+   - โหมดมืดอยู่ใน @media (prefers-color-scheme: dark) (ตามการตั้งค่าเครื่อง)
+   ===================================================================== */
+:root {
+  color-scheme: light dark;
+
+  /* พื้นผิวและตัวอักษร */
+  --bg: #f3f7f6;
+  --surface: #ffffff;
+  --surface-2: #e6eeec;
+  --ink: #10262e;
+  --ink-muted: #45595f;
+  --line: #c5d3d0;
+  --focus: #0a5c6e;
+
+  /* สีหลักของแบรนด์ (สีน้ำแม่น้ำ) */
+  --brand: #0a5c6e;
+  --brand-ink: #ffffff;
+  --brand-soft: #d5eaee;
+
+  /* ปุ่มโทรฉุกเฉิน */
+  --call: #b3261e;
+  --call-ink: #ffffff;
+
+  /* ระดับสถานการณ์ 4 ระดับ: พื้น / ตัวอักษร / เส้นขอบ */
+  --lv-ok-bg: #dcf3e2;
+  --lv-ok-fg: #0f5a25;
+  --lv-ok-line: #2e8b4a;
+  --lv-watch-bg: #fff1bf;
+  --lv-watch-fg: #654500;
+  --lv-watch-line: #c99400;
+  --lv-warning-bg: #ffe0c2;
+  --lv-warning-fg: #7a3300;
+  --lv-warning-line: #d9670b;
+  --lv-critical-bg: #ffd9d6;
+  --lv-critical-fg: #7f1410;
+  --lv-critical-line: #c62828;
+  /* ไม่พร้อมใช้งาน / ไม่มีข้อมูล */
+  --lv-none-bg: #e6eeec;
+  --lv-none-fg: #3b4d53;
+  --lv-none-line: #8fa3a0;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #0b1518;
+    --surface: #13232a;
+    --surface-2: #1b2f37;
+    --ink: #e8f1f0;
+    --ink-muted: #aabec1;
+    --line: #2b444d;
+    --focus: #6fd0e2;
+
+    --brand: #6fd0e2;
+    --brand-ink: #04222a;
+    --brand-soft: #16343d;
+
+    --call: #f2766f;
+    --call-ink: #2a0503;
+
+    --lv-ok-bg: #123a20;
+    --lv-ok-fg: #a4e8b7;
+    --lv-ok-line: #3fa35f;
+    --lv-watch-bg: #423200;
+    --lv-watch-fg: #ffe08a;
+    --lv-watch-line: #c99400;
+    --lv-warning-bg: #4a2408;
+    --lv-warning-fg: #ffc58f;
+    --lv-warning-line: #e07b2a;
+    --lv-critical-bg: #4d1512;
+    --lv-critical-fg: #ffb4ae;
+    --lv-critical-line: #e5534b;
+    --lv-none-bg: #1b2f37;
+    --lv-none-fg: #b7c9cc;
+    --lv-none-line: #587177;
+  }
+}
+
+/* ตอนพิมพ์ให้ใช้สีสว่าง ประหยัดหมึก แม้เครื่องจะเปิดโหมดมืด */
+@media print {
+  :root {
+    --bg: #ffffff;
+    --surface: #ffffff;
+    --surface-2: #eeeeee;
+    --ink: #000000;
+    --ink-muted: #333333;
+    --line: #999999;
+    --brand: #000000;
+    --brand-soft: #eeeeee;
+  }
+}
+
+/* เชื่อม token ให้ Tailwind ใช้เป็น class ได้ เช่น bg-surface text-ink border-line */
+@theme inline {
+  --color-bg: var(--bg);
+  --color-surface: var(--surface);
+  --color-surface-2: var(--surface-2);
+  --color-ink: var(--ink);
+  --color-ink-muted: var(--ink-muted);
+  --color-line: var(--line);
+  --color-brand: var(--brand);
+  --color-brand-ink: var(--brand-ink);
+  --color-brand-soft: var(--brand-soft);
+  --color-call: var(--call);
+  --color-call-ink: var(--call-ink);
+
+  --color-lv-ok-bg: var(--lv-ok-bg);
+  --color-lv-ok-fg: var(--lv-ok-fg);
+  --color-lv-ok-line: var(--lv-ok-line);
+  --color-lv-watch-bg: var(--lv-watch-bg);
+  --color-lv-watch-fg: var(--lv-watch-fg);
+  --color-lv-watch-line: var(--lv-watch-line);
+  --color-lv-warning-bg: var(--lv-warning-bg);
+  --color-lv-warning-fg: var(--lv-warning-fg);
+  --color-lv-warning-line: var(--lv-warning-line);
+  --color-lv-critical-bg: var(--lv-critical-bg);
+  --color-lv-critical-fg: var(--lv-critical-fg);
+  --color-lv-critical-line: var(--lv-critical-line);
+  --color-lv-none-bg: var(--lv-none-bg);
+  --color-lv-none-fg: var(--lv-none-fg);
+  --color-lv-none-line: var(--lv-none-line);
+
+  /* ฟอนต์: Noto Sans Thai (โหลดใน layout.tsx) แล้วถอยไปใช้ฟอนต์ระบบ */
+  --font-sans: var(--font-noto-thai), "Sarabun", system-ui, sans-serif;
+
+  /* มุมโค้ง: การ์ดใหญ่ / ปุ่ม / ป้าย */
+  --radius-card: 1rem;
+  --radius-control: 0.75rem;
+}
+
+/* ขนาดตัวอักษรฐาน 17px (ใหญ่กว่ามาตรฐานเล็กน้อย อ่านง่ายบนมือถือ) */
+html {
+  font-size: 106.25%;
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  background: var(--bg);
+  color: var(--ink);
+  font-family: var(--font-sans);
+  line-height: 1.6;
+}
+
+/* กรอบโฟกัสชัดเจนสำหรับคนที่ใช้คีย์บอร์ด/ตัวช่วยอ่านหน้าจอ */
+:focus-visible {
+  outline: 3px solid var(--focus);
+  outline-offset: 2px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+
+/* ---- หมุดบนแผนที่ (หน้า /map): ต่างกันทั้งรูปร่างและตัวอักษร ไม่ใช้สีอย่างเดียว ---- */
+.pin {
+  display: flex;
+  width: 34px;
+  height: 34px;
+  align-items: center;
+  justify-content: center;
+  border: 3px solid #fff;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.55);
+  color: #fff;
+  font-weight: 700;
+  font-size: 15px;
+  font-family: var(--font-sans);
+}
+.pin-evacuation { background: #0a5c6e; border-radius: 50%; }
+.pin-shelter { background: #6b3fa0; border-radius: 8px; }
+.pin-parking { background: #1f6f3a; border-radius: 8px; transform: rotate(45deg); }
+.pin-parking > span { transform: rotate(-45deg); }
+.pin-selected { outline: 4px solid #f5b800; outline-offset: 2px; }
+.pin-me { background: #1a5fd0; border-radius: 50%; width: 20px; height: 20px; }
+.leaflet-container { font-family: var(--font-sans); }

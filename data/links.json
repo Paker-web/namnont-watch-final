@@ -1,0 +1,89 @@
+{
+  "_note": "ลิงก์ 'ดูข้อมูลจริง' — วางลิงก์ที่คุณเปิดตรวจแล้วเท่านั้น url เป็น null = ยังไม่มีลิงก์ที่ยืนยัน (หน้าเว็บจะแสดง 'ยังไม่มีลิงก์')",
+  "links": [
+    {
+      "id": "tw-nonthaburi",
+      "title": "ThaiWater — นนทบุรี",
+      "url": "https://nonthaburi.thaiwater.net/wl",
+      "todo": "จากแผนของคุณ (30 ก.ย. 69) — ตรวจว่าเปิดได้จริง",
+      "verified": false
+    },
+    {
+      "id": "tw-ayutthaya",
+      "title": "ThaiWater — พระนครศรีอยุธยา",
+      "url": "https://ayutthaya.thaiwater.net/wl",
+      "todo": "จากแผนของคุณ (30 ก.ย. 69) — ตรวจว่าเปิดได้จริง",
+      "verified": false
+    },
+    {
+      "id": "tw-pathumthani",
+      "title": "ThaiWater — ปทุมธานี",
+      "url": null,
+      "todo": "TODO: วางลิงก์ที่ตรวจแล้ว",
+      "verified": false
+    },
+    {
+      "id": "tw-national-cctv",
+      "title": "National Thaiwater — ชั้นกล้อง CCTV",
+      "url": "https://nationalthaiwater.onwr.go.th/waterlevel",
+      "todo": "จากแผนของคุณ: มีชั้น CCTV — ตรวจว่าเปิดได้จริง",
+      "verified": false
+    },
+    {
+      "id": "tw-national-diagram",
+      "title": "National Thaiwater — แผนผังน้ำ",
+      "url": null,
+      "todo": "TODO: วางลิงก์ที่ตรวจแล้ว",
+      "verified": false
+    },
+    {
+      "id": "pier-nonthaburi",
+      "title": "ท่าน้ำนนท์",
+      "url": null,
+      "todo": "TODO: วางลิงก์ที่ยืนยันแล้ว",
+      "verified": false
+    },
+    {
+      "id": "tw-pathumthani-guess",
+      "title": "ThaiWater — ปทุมธานี",
+      "url": null,
+      "todo": "TODO: แผนบอกว่าน่าจะใช้รูปแบบเดียวกับนนทบุรี/อยุธยา — ตรวจ URL จริงแล้ววางที่นี่",
+      "verified": false
+    },
+    {
+      "id": "tmd-radar",
+      "title": "เรดาร์ทางการ กรมอุตุนิยมวิทยา",
+      "url": "https://www.tmd.go.th",
+      "todo": "หน้าแรกของ tmd.go.th (จากแผนของคุณ) — TODO ตรวจหน้าเรดาร์โดยตรงแล้วแทนที่",
+      "verified": false
+    },
+    {
+      "id": "gistda-flood",
+      "title": "น้ำท่วมจากดาวเทียม (GISTDA)",
+      "url": null,
+      "todo": "TODO: แผนระบุ flood.gistda.or.th แต่ให้ตรวจ URL ก่อน — วางลิงก์ที่ตรวจแล้ว",
+      "verified": false
+    },
+    {
+      "id": "tide",
+      "title": "ตารางน้ำขึ้นน้ำลง (น้ำทะเลหนุน)",
+      "url": null,
+      "todo": "TODO: เลือกแหล่งที่เชื่อถือแล้ววางลิงก์",
+      "verified": false
+    },
+    {
+      "id": "report-place",
+      "title": "แจ้งจุดอพยพ/ที่จอดรถใหม่ หรือแก้ข้อมูล (Google Form)",
+      "url": null,
+      "todo": "TODO: สร้าง Google Form แล้ววางลิงก์",
+      "verified": false
+    },
+    {
+      "id": "rid-dam-report",
+      "title": "รายงานสถานการณ์น้ำ/เขื่อน กรมชลประทาน",
+      "url": "https://www.rid.go.th",
+      "todo": "หน้าแรก rid.go.th (จากแผนของคุณ) — TODO ตรวจหน้ารายงานโดยตรง",
+      "verified": false
+    }
+  ]
+}

@@ -1,0 +1,6 @@
+{
+  "schema": 1,
+  "updated_at": null,
+  "_note": "ไฟล์นี้ถูกเขียนโดย scripts/update-announcements.mjs (GitHub Actions ทุก 3 ชม.) — ยังว่างอยู่จนกว่าจะยืนยัน URL ใน data/sources.json และตั้ง GEMINI_API_KEY รายการที่ needs_review:true จะไม่ขึ้นหน้าเว็บ ให้เปิดดูต้นฉบับแล้วแก้เป็น false เองถ้าถูกต้อง",
+  "entries": []
+}

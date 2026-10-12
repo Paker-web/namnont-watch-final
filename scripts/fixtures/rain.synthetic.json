@@ -1,0 +1,50 @@
+{
+ "_synthetic": true,
+ "rain_24h": {
+  "result": "OK",
+  "data": [
+   {
+    "station": {
+     "id": 1,
+     "tele_station_name": {
+      "th": "สถานีทดสอบ A"
+     },
+     "tele_station_lat": 13.88,
+     "tele_station_long": 100.41
+    },
+    "rain_24h": "12.5",
+    "rainfall_datetime": "2026-09-30 01:00",
+    "geocode": {
+     "province_code": "12",
+     "province_name": {
+      "th": "นนทบุรี"
+     },
+     "amphoe_name": {
+      "th": "บางใหญ่"
+     }
+    }
+   },
+   {
+    "station": {
+     "id": 2,
+     "tele_station_name": {
+      "th": "สถานีทดสอบ B"
+     },
+     "tele_station_lat": 13.95,
+     "tele_station_long": 100.5
+    },
+    "rain_24h": "40.0",
+    "rainfall_datetime": "2026-09-30 01:00",
+    "geocode": {
+     "province_code": "12",
+     "province_name": {
+      "th": "นนทบุรี"
+     },
+     "amphoe_name": {
+      "th": "ปากเกร็ด"
+     }
+    }
+   }
+  ]
+ }
+}

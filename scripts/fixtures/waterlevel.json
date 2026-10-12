@@ -1,0 +1,211 @@
+{
+ "waterlevel_data": {
+  "result": "OK",
+  "data": [
+   {
+    "id": 1315400517,
+    "waterlevel_datetime": "2026-09-30 01:50",
+    "waterlevel_m": null,
+    "waterlevel_msl": "2.18",
+    "waterlevel_msl_previous": "2.21",
+    "flow_rate": null,
+    "discharge": null,
+    "storage_percent": "97.98",
+    "station_type": "tele_waterlevel",
+    "situation_level": 4,
+    "agency": {
+     "id": 9,
+     "agency_name": {
+      "th": "สถาบันสารสนเทศทรัพยากรน้ำ (องค์การมหาชน)"
+     },
+     "agency_shortname": {
+      "th": "สสน.",
+      "en": "HII"
+     }
+    },
+    "station": {
+     "id": 26,
+     "tele_station_name": {
+      "th": "สะพานนวลฉวี"
+     },
+     "tele_station_lat": 13.94749,
+     "tele_station_long": 100.53507,
+     "tele_station_oldcode": "CPY014",
+     "left_bank": 2.5,
+     "right_bank": 2.5,
+     "min_bank": 2.5,
+     "ground_level": -13.306,
+     "is_key_station": false
+    },
+    "geocode": {
+     "province_code": "12",
+     "province_name": {
+      "th": "นนทบุรี"
+     },
+     "amphoe_name": {
+      "th": "ปากเกร็ด"
+     },
+     "tumbon_name": {
+      "th": "บ้านใหม่"
+     }
+    },
+    "diff_wl_bank": "0.32",
+    "diff_wl_bank_text": "ต่ำกว่าตลิ่ง (ม.)",
+    "river_name": "แม่น้ำเจ้าพระยา"
+   },
+   {
+    "id": 1315391079,
+    "waterlevel_datetime": "2026-09-30 01:00",
+    "waterlevel_m": null,
+    "waterlevel_msl": "4.91",
+    "waterlevel_msl_previous": "4.90",
+    "flow_rate": null,
+    "discharge": "1319.00",
+    "storage_percent": "104.12",
+    "station_type": "tele_waterlevel",
+    "situation_level": 5,
+    "agency": {
+     "id": 12,
+     "agency_name": {
+      "th": "กรมชลประทาน "
+     },
+     "agency_shortname": {
+      "th": "ชป.",
+      "en": "RID"
+     }
+    },
+    "station": {
+     "id": 2609,
+     "tele_station_name": {
+      "th": "บ้านป้อม"
+     },
+     "tele_station_lat": 14.3691,
+     "tele_station_long": 100.528732,
+     "tele_station_oldcode": "C.35",
+     "left_bank": 5.06,
+     "right_bank": 6.209,
+     "min_bank": 4.35,
+     "ground_level": -9.25,
+     "is_key_station": true
+    },
+    "geocode": {
+     "province_code": "14",
+     "province_name": {
+      "th": "พระนครศรีอยุธยา"
+     },
+     "amphoe_name": {
+      "th": "พระนครศรีอยุธยา"
+     },
+     "tumbon_name": {
+      "th": "บ้านป้อม"
+     }
+    },
+    "diff_wl_bank": "0.56",
+    "diff_wl_bank_text": "ล้นตลิ่ง (ม.)",
+    "river_name": "แม่น้ำเจ้าพระยา"
+   },
+   {
+    "id": 1315400461,
+    "waterlevel_datetime": "2026-09-30 01:50",
+    "waterlevel_m": null,
+    "waterlevel_msl": "1.63",
+    "waterlevel_msl_previous": "1.64",
+    "flow_rate": null,
+    "discharge": null,
+    "storage_percent": "112.80",
+    "station_type": "tele_waterlevel",
+    "situation_level": 5,
+    "agency": {
+     "id": 9,
+     "agency_name": {
+      "th": "สถาบันสารสนเทศทรัพยากรน้ำ (องค์การมหาชน)"
+     },
+     "agency_shortname": {
+      "th": "สสน.",
+      "en": "HII"
+     }
+    },
+    "station": {
+     "id": 27,
+     "tele_station_name": {
+      "th": "คลองเปรมประชากร หลักหก"
+     },
+     "tele_station_lat": 13.96562,
+     "tele_station_long": 100.60262,
+     "tele_station_oldcode": "BKK002",
+     "left_bank": 1.575,
+     "right_bank": 1.292,
+     "min_bank": 1.29,
+     "ground_level": -1.372,
+     "is_key_station": false
+    },
+    "geocode": {
+     "province_code": "13",
+     "province_name": {
+      "th": "ปทุมธานี"
+     },
+     "amphoe_name": {
+      "th": "เมืองปทุมธานี"
+     },
+     "tumbon_name": {
+      "th": "หลักหก"
+     }
+    },
+    "diff_wl_bank": "0.34",
+    "diff_wl_bank_text": "ล้นตลิ่ง (ม.)",
+    "river_name": "คลองเปรมประชากร"
+   },
+   {
+    "id": 1315391092,
+    "waterlevel_datetime": "2026-09-30 01:00",
+    "waterlevel_m": null,
+    "waterlevel_msl": "7.03",
+    "waterlevel_msl_previous": "7.11",
+    "flow_rate": null,
+    "discharge": "612.00",
+    "storage_percent": "98.59",
+    "station_type": "tele_waterlevel",
+    "situation_level": 4,
+    "agency": {
+     "id": 12,
+     "agency_name": {
+      "th": "กรมชลประทาน "
+     },
+     "agency_shortname": {
+      "th": "ชป.",
+      "en": "RID"
+     }
+    },
+    "station": {
+     "id": 2624,
+     "tele_station_name": {
+      "th": "ท้ายเขื่อนพระรามหก"
+     },
+     "tele_station_lat": 14.56012,
+     "tele_station_long": 100.71994,
+     "tele_station_oldcode": "S.26",
+     "left_bank": 10.134,
+     "right_bank": 9.64,
+     "min_bank": 7.2,
+     "ground_level": -4.83,
+     "is_key_station": true
+    },
+    "geocode": {
+     "province_code": "14",
+     "province_name": {
+      "th": "พระนครศรีอยุธยา"
+     },
+     "amphoe_name": {
+      "th": "ท่าเรือ"
+     },
+     "tumbon_name": {
+      "th": "ท่าเรือ"
+     }
+    },
+    "diff_wl_bank": "0.17",
+    "diff_wl_bank_text": "ต่ำกว่าตลิ่ง (ม.)",
+    "river_name": "แม่น้ำป่าสัก"
+   }
+  ]
+ }
+}

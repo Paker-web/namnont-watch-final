@@ -1,0 +1,14 @@
+{
+  "_note": "พื้นที่ให้เลือกในหน้าเรดาร์/พยากรณ์ — พิกัดเป็นค่าประมาณระดับอำเภอ (ใช้กับกริดพยากรณ์ ~ไม่กี่กม.) ไม่ใช่พิกัดสถานที่เฉพาะ",
+  "areas": [
+    { "slug": "saothonghin", "name": "ต.เสาธงหิน (บางใหญ่)", "province": "นนทบุรี", "lat": 13.877, "lng": 100.412, "approx": true, "todo": "พิกัดจากที่คุณให้มา ยังไม่ได้ตรวจ" },
+    { "slug": "nonthaburi-mueang", "name": "อ.เมืองนนทบุรี", "province": "นนทบุรี", "lat": 13.86, "lng": 100.52, "approx": true, "todo": "TODO ตรวจพิกัดประมาณ" },
+    { "slug": "bangkruai", "name": "อ.บางกรวย", "province": "นนทบุรี", "lat": 13.81, "lng": 100.49, "approx": true, "todo": "TODO ตรวจพิกัดประมาณ" },
+    { "slug": "bangyai", "name": "อ.บางใหญ่", "province": "นนทบุรี", "lat": 13.86, "lng": 100.41, "approx": true, "todo": "TODO ตรวจพิกัดประมาณ" },
+    { "slug": "bangbuathong", "name": "อ.บางบัวทอง", "province": "นนทบุรี", "lat": 13.91, "lng": 100.42, "approx": true, "todo": "TODO ตรวจพิกัดประมาณ" },
+    { "slug": "sainoi", "name": "อ.ไทรน้อย", "province": "นนทบุรี", "lat": 13.97, "lng": 100.33, "approx": true, "todo": "TODO ตรวจพิกัดประมาณ" },
+    { "slug": "pakkret", "name": "อ.ปากเกร็ด", "province": "นนทบุรี", "lat": 13.91, "lng": 100.5, "approx": true, "todo": "TODO ตรวจพิกัดประมาณ" },
+    { "slug": "ayutthaya", "name": "อ.พระนครศรีอยุธยา", "province": "พระนครศรีอยุธยา", "lat": 14.35, "lng": 100.57, "approx": true, "todo": "TODO ตรวจพิกัดประมาณ" },
+    { "slug": "pathumthani", "name": "อ.เมืองปทุมธานี", "province": "ปทุมธานี", "lat": 14.02, "lng": 100.52, "approx": true, "todo": "TODO ตรวจพิกัดประมาณ" }
+  ]
+}

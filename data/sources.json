@@ -1,0 +1,64 @@
+{
+  "sources": [
+    {
+      "id": "dpm",
+      "name": "กรมป้องกันและบรรเทาสาธารณภัย (ปภ.)",
+      "url": "https://www.disaster.go.th",
+      "usedFor": "ประกาศเตือนภัยอย่างเป็นทางการ และแนวทางปฏิบัติตัว",
+      "verified": false,
+      "todo": "TODO: ตรวจว่าลิงก์ยังใช้ได้"
+    },
+    {
+      "id": "rid",
+      "name": "กรมชลประทาน",
+      "url": "https://www.rid.go.th",
+      "usedFor": "ข้อมูลน้ำและการระบายน้ำจากเขื่อน (เชื่อมข้อมูลในเฟส 3)",
+      "verified": false,
+      "todo": "TODO: เลือกหน้า/API ที่ใช้จริงในเฟส 3 แล้วอัปเดตลิงก์"
+    },
+    {
+      "id": "hii",
+      "name": "สถาบันสารสนเทศทรัพยากรน้ำ (สสน.)",
+      "url": "https://www.thaiwater.net",
+      "usedFor": "ระดับน้ำในแม่น้ำและสถานีวัด (เชื่อมข้อมูลในเฟส 3)",
+      "verified": false,
+      "todo": "TODO: ตรวจลิงก์และเงื่อนไขการใช้ข้อมูล"
+    },
+    {
+      "id": "tmd",
+      "name": "กรมอุตุนิยมวิทยา",
+      "url": "https://www.tmd.go.th",
+      "usedFor": "พยากรณ์อากาศ ฝน และเรดาร์ (เชื่อมข้อมูลในเฟส 4)",
+      "verified": false,
+      "todo": "TODO: ตรวจลิงก์ และเลือกหน้าเรดาร์ที่ใช้จริง"
+    },
+    {
+      "id": "osm",
+      "name": "OpenStreetMap",
+      "url": "https://www.openstreetmap.org/copyright",
+      "usedFor": "แผนที่พื้นหลัง (เฟส 5) — © ผู้ร่วมสร้าง OpenStreetMap",
+      "verified": false
+    }
+  ],
+  "announcementSources": {
+    "_note": "หน้าประกาศ/รายงานสถานการณ์น้ำที่สคริปต์จะดึงข้อความ — ใส่ url ที่คุณเปิดตรวจแล้วเท่านั้น แล้วเปลี่ยน confirmed เป็น true (ยังเป็น false/null = สคริปต์ข้ามไป ไม่ดึงอะไร) สคริปต์เคารพ robots.txt",
+    "items": [
+      {
+        "id": "rid",
+        "name": "กรมชลประทาน",
+        "url": null,
+        "candidate_homepage": "https://www.rid.go.th",
+        "confirmed": false,
+        "todo": "TODO: หาหน้า 'รายงานสถานการณ์น้ำ/ประกาศการระบายน้ำเขื่อนเจ้าพระยา' ที่เป็นข้อความ (HTML) แล้ววาง url"
+      },
+      {
+        "id": "ddpm",
+        "name": "กรมป้องกันและบรรเทาสาธารณภัย (ปภ.)",
+        "url": null,
+        "candidate_homepage": "https://www.ddpm.go.th",
+        "confirmed": false,
+        "todo": "TODO: วาง url หน้าประกาศเตือนภัยน้ำท่วมที่เป็น HTML (ไม่ใช่ PDF/รูปภาพ) — แผนของคุณระบุโดเมน ddpm.go.th ส่วนหน้าเว็บปัจจุบันของเรา (เฟส 1) ใช้ disaster.go.th ให้ตรวจว่าโดเมนไหนถูกต้อง"
+      }
+    ]
+  }
+}
